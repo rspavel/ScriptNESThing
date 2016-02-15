@@ -2,14 +2,15 @@
 
 %Packages
 \usepackage{graphicx}
+\usepackage{hyperref}
 
 \graphicspath{{./figs/}}
 
 %Presentation info
 \title[]{Using Code and Scripts to Navigate an NES Game}
-\subtitle{A Freeware Homebrew NES Game}
+\subtitle{A Freeware Homebrew NES Game Because Legality}
 \author[]{}
-\institute{}
+\institute{Coding Dojo}
 \date{}
 
 \begin{document}
@@ -18,10 +19,73 @@
 	\titlepage
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Important Preface}
 	\begin{itemize}
-		\item This is going to be a train wreck
+		\item There is a good chance this may be a bit too involved for one evening
+		\item If this goes too poorly, we can migrate to a different location to discuss what we have learned
 	\end{itemize}
 \end{frame}
+
+\begin{frame}{Introduction}
+	\begin{itemize}
+		\item As many of us probably know, computers are good for more than just math and kitty cats and completely dominating human players in video games.
+		\item They are also good for controlling the movement of expensive and/or expendable devices
+		\begin{itemize}
+			\item Like cars
+			\item Or Drones
+			\item Or really expensive lab equipment
+			\item And humanoid robots with a heart of gold that resemble Jude Law and spend a lot of time around small children
+		\end{itemize}
+		\item Able to react much more quickly than a human
+		\item Able to much more consistently reproduce a sequence of actions
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{}
+	\begin{itemize}
+		\item So we should do that
+		\item Except the logistics of controlling devices is complicated
+		\item Fortunately, video games
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{}
+	\begin{itemize}
+		\item People with ridiculously good reaction times and dexterity like to play video games really quickly
+		\item Based around memorizing the entire game and performing many ``frame perfect'' tricks (actions must occur within a one sixtieth of a second window)
+		\item Others, with worse reaction time but more free time, use special tools to record a perfect run
+		\item Allows for a sequence of button presses to be recorded and played back, allowing for each action to be the best possible execution
+		\item But they prefer to record human input, whereas we are going to just script things
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{FCEUX}
+	\begin{itemize}
+		\item For this dojo, we will use FCEUX
+		\item An NES emulator with the ability to use a Lua script as input
+		\item Selected because it allows scriptable input and supports Windows and Linux (and probably Mac?)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Super Bat Puncher}
+	\begin{itemize}
+		\item We will use the Lua script interface to FCEUX to try to complete the Super Bat Puncher demo
+		\item Selected because it was the least horrible looking freeware NES rom that probably doesn't use proprietary NES sprites
+		\item The one I really wanted to do costs about 30 bucks, so it isn't going to happen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{The Goal}
+	\begin{itemize}
+		\item The goal of this demo is to make as much progress as you can in the demo before we reach critical mass of giving up
+		\item A useful starter script can be found in the repository
+		\item FCEUX: \url{http://www.fceux.com/web/home.html} 
+		\item FCEUX Lua Documentation \url{http://www.fceux.com/web/help/fceux.html?LuaFunctionsList.html}
+		\item Super Bat Puncher: \url{http://morphcat.de/superbatpuncher/}
+	\end{itemize}
+\end{frame}
+
 
 \end{document}
